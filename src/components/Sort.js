@@ -30,38 +30,37 @@ class Sort extends Component {
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li onClick={ () => this.onClick('name', 1) }>
-                <a 
+                <button 
                     className={(this.props.sort.by === 'name' && 
                     this.props.sort.value === 1) ? 'sort_selected' : ''}  >
                   <span className="fa fa-sort-alpha-asc pr-5 mr-5">
                     Tên A-Z
                   </span>
-                </a>
+                </button>
               </li>
               <li onClick={ () => this.onClick('name', -1) }>
-                <a 
+                <button 
                     
                     className={(this.props.sort.by === 'name' && 
                     this.props.sort.value === -1) ? 'sort_selected' : ''} >
                     
                   <span className="fa fa-sort-alpha-desc pr-5">Tên Z-A</span>
-                </a>
+                </button>
               </li>
               <li role="separator" className="divider"></li>
               <li onClick={ () => this.onClick('status', 1) }>
-                <a
-                    
+                <button
                     className={(this.props.sort.by === 'status' && 
                     this.props.sort.value === 1) ? 'sort_selected' : ''}   >
                   Trạng Thái Kích Hoạt
-                </a>
+                </button>
               </li>
               <li onClick={ () => this.onClick('status', -1) }>
-                <a
+                <button
                     className={(this.props.sort.by === 'status' && 
                     this.props.sort.value === -1) ? 'sort_selected' : ''} >
                   Trạng Thái Ẩn
-                </a>
+                </button>
               </li>
             </ul>
           </div>
